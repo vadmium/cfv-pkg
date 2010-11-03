@@ -32,5 +32,5 @@ DIFF
 
 package() {
   make -C "$srcdir/$_fullver" install=install PYTHON=python2 prefix=/usr \
-    DESTDIR="$pkgdir" install
+    mandir=/usr/share/man DESTDIR="$pkgdir" install
 }
